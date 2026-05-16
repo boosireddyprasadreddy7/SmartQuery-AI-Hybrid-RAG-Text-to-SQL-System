@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"message": "Hybrid AI Query System Running"}
+    return {"message": "AI Hybrid System Running Successfully"}
