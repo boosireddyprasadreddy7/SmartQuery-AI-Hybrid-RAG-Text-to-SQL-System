@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.utils.logger import logger
 
 from app.api.v1.api import api_router
 
@@ -25,3 +26,4 @@ def home():
     return {
         "message": "SmartQuery AI System Running Successfully"
     }
+logger.info("SmartQuery AI Backend Started")
